@@ -1,0 +1,17 @@
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 前端依赖与产物
+node_modules/
+dist/
+build/
+*.log
