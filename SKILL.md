@@ -71,10 +71,10 @@ description: 统一自适应的全端前端页面 UI 设计系统与工程规范
 | 手册 | 内容 | 何时读 |
 | --- | --- | --- |
 | [01-foundations-and-tokens.md](./references/01-foundations-and-tokens.md) | 色彩/圆角/阴影/间距 Token、0.5px 边框、同心圆角、自适应字阶、按钮六态与五档层级、点赞爆粒子/提交三连变/果冻开关/长按确认四模式契约、Badge 映射、去 AI 味四纯粹性与观感对照、i18n/RTL、AX 协作协议、WCAG 2.1 AA / ARIA 可访问性 | 所有 UI 任务的共享底线；写组件、定视觉规范、设计按钮与控件微交互、补齐可访问性时查阅 |
-| [02-layout-patterns.md](./references/02-layout-patterns.md) | 环境探测与骨架选型；宽屏列表/表单/详情/看板/设置骨架（含图表聚焦与直接标注）；窄屏信息流/详情/向导/个人中心骨架；工作台四层正交分层；演示页一页一观点骨架；官网落地页与 Bento 便当盒布局；响应式降级断点；五态覆盖；参考图转设计契约 | 确定页面结构、布局拓扑、看板图表、演示页、跨端降级与参考稿提炼时 |
+| [02-layout-patterns.md](./references/02-layout-patterns.md) | 环境探测与骨架选型；宽屏列表/表单/详情/看板/设置/登录认证页骨架（含图表聚焦与直接标注、行业场景分栏）；窄屏信息流/详情/向导/个人中心骨架；工作台四层正交分层；演示页一页一观点骨架；官网落地页与 Bento 便当盒布局；响应式降级断点；五态覆盖；参考图转设计契约 | 确定页面结构、布局拓扑、看板图表、登录页、演示页、跨端降级与参考稿提炼时 |
 | [03-components-and-overlays.md](./references/03-components-and-overlays.md) | 六大否定判据、输入选择控件选型、浮层决策树与尺寸、Modal/AlertDialog 阻断分级、Bottom Sheet 分档吸附、ActionSheet、Snackbar 撤销条、Tour 引导、Inline Alert 行内校验、Lightbox 灯箱、复合组件、导航选型与侧边栏分组/高亮/低频项固定细则 | 选组件、定浮层形态、处理反馈提示、表格、导航与侧边栏整理时 |
 | [04-interaction-and-engineering.md](./references/04-interaction-and-engineering.md) | 触控热区与拇指区、安全区、软键盘、手势与滚动手感（速度阈值/指针捕获/多点保护/边界阻尼）、穿透锁死、CJK 输入法守卫、自适应增高输入框、视口跟随、分栏多窗口、阴影裁切/滚动槽位/原生语义避坑、动效频率决策、时长/缓动/性能铁律、16 种常见动效模式词典、15 种加载态动效词典、骨架屏双模、组件架构与状态管理阶梯、弱网低算力降级 | 处理交互手感、输入体验、滚动窗口工程、动效与加载等待态选型、组件拆分与状态选型时 |
-| [05-audit-checklist.md](./references/05-audit-checklist.md) | 通用基线 48 项 + 宽屏后台 10 项 + 触屏窄屏 22 项 + 桌面 Agent 22 项交付门禁、复核三列表格格式与最小交付证明记录 | 代码生成后自查、评审、交付验收时逐条核对 |
+| [05-audit-checklist.md](./references/05-audit-checklist.md) | 通用基线 48 项 + 宽屏后台 12 项 + 触屏窄屏 22 项 + 桌面 Agent 22 项交付门禁、复核三列表格格式与最小交付证明记录 | 代码生成后自查、评审、交付验收时逐条核对 |
 
 ## 开源 UI 套件选型参考（从零起步时查阅）
 
@@ -103,6 +103,7 @@ description: 统一自适应的全端前端页面 UI 设计系统与工程规范
 | `form-page-template.tsx` | Top-aligned 标签置顶 + 卡片语义分组 + 离开防丢脏检查 |
 | `detail-page-template.tsx` | DetailHeader + DescriptionGrid + Tabs 辅助页签 + 审计时间线 |
 | `dashboard-page-template.tsx` | 问候语 + 4 个核心 KPI 趋势卡 + 轻量原生柱状图 + 快捷直通 |
+| `login-page-template.tsx` | 宽屏左右分栏：行业场景面板 + 登录表单；密码可见切换、行内校验、加载锁按钮、窄屏降级 |
 
 ### 触屏窄屏模板（`templates/mobile/`）
 
